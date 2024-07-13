@@ -4,10 +4,10 @@ spring:
     config:
       server:
         git:
-          uri: file://config
+          uri: https://github.com/johnpemberton/mtest1/sccs-config
           repos:
-            mtest1:
+            app1:
               cloneOnStart: true
-              uri: https://github.com/johnpemberton/mtest1
+              uri: https://github.com/johnpemberton/mtest1/app1
               username: johnpemberton
               password: ${SCCS_GITHUB_TOKEN}
