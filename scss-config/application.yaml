@@ -1,0 +1,13 @@
+# Application Config for Spring Cloud Server
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://config
+          repos:
+            mtest1:
+              cloneOnStart: true
+              uri: https://github.com/johnpemberton/mtest1
+              username: johnpemberton
+              password: ${SCCS_GITHUB_TOKEN}
