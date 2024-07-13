@@ -5,6 +5,8 @@ spring:
       server:
         git:
           uri: https://github.com/johnpemberton/mtest1/sccs-config
+          username: johnpemberton
+          password: ${SCCS_GITHUB_TOKEN}
           repos:
             app1:
               cloneOnStart: true
